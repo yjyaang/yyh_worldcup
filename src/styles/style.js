@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-export const StartContainer = styled.div`
+export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+`
+
+export const StartContainer = styled(Container)`
     img {
         width: 500px;
         margin: 10px;
@@ -33,7 +36,8 @@ export const StartMain = styled.div`
 export const BaseBtn = styled.button`
     width: 200px;
     height: 50px;
-    background-color: #5ea3db;
+    background-color: #324bdb;
+    color: #fff;
     border-style: none;
     border-radius: 30px;
     box-shadow: 0 4px 15px 0 rgba(160, 160, 160, 0.75);

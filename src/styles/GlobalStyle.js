@@ -16,11 +16,12 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100vh;
     margin: 0 auto;
+    /* background-color: #bec7f4; */
     }
 
     .wrap {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
     display: flex;
     justify-content: center;
     align-items: center;

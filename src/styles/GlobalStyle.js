@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
 
     .wrap {
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 90px);
     display: flex;
     justify-content: center;
     align-items: center;

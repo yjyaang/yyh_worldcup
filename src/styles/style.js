@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const Container = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -101,7 +102,7 @@ export const SelectArea = styled.div`
             width: 70%;
         }
         @media only screen and (max-width: 380px) {
-            width: 57%;
+            width: 55%;
         }
     }
 
@@ -113,3 +114,79 @@ export const SelectArea = styled.div`
             margin: 10px;
         }
 `
+
+export const ResultImg = styled.img`
+        width: 100px;
+        @media only screen and (max-width: 420px) {
+            width: 70px;
+        }
+    `
+
+export const ResultLi = styled.li`
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.5);
+    font-size: 16px;
+    @media only screen and (max-width: 420px) {
+            width: 85%;
+            font-size: 14px;
+        }
+`
+
+export const ResultDiv = styled.div`
+    overflow: auto;
+    ::-webkit-scrollbar{
+    display:none;
+}
+`
+
+export const GraphDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding-left: 10px;
+    .text {
+        padding: 5px;
+    }
+`
+export const votechart = keyframes`
+    0% {
+        width: 0;
+    }
+    100% {
+        width: ${(props) => props.dealt + "%"};
+    }
+`
+
+export const ResultUl = styled.ul`
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+
+export const Progress = styled.div`
+    width: 180px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #bababa;
+    border-radius: 20px;
+    margin: 5px;
+    @media only screen and (max-width: 420px) {
+            width: 100px;
+            height: 15px;
+        }
+`;
+export const Dealt = styled.div`
+    background-color: #324bdb;
+    width: ${(props) => props.dealt + "%"};
+    height: 100%;
+    border-radius: 20px;
+    animation: ${votechart} 1s 1;
+`;

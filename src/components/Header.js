@@ -27,7 +27,7 @@ const StyledLink = styled(Link)`
 const Header = () => {
     return (
         <HeaderDiv>
-            <StyledLink to={"/"}><Title>GO TO MAIN <i class="fa-solid fa-house"></i></Title></StyledLink>
+            <StyledLink to={"/"}><Title>다시 투표하기 <i class="fa-solid fa-house"></i></Title></StyledLink>
         </HeaderDiv>
     )
 }

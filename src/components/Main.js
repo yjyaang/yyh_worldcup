@@ -2,20 +2,23 @@ import React, { useEffect, useState } from 'react'
 import { images } from './Images'
 import { Container, RoundCounter, FlexBox, BaseBtn, SelectArea } from '../styles/style'
 import { useNavigate } from 'react-router-dom';
+import {database} from '../Firebase'
+import { collection, addDoc } from "firebase/firestore";
 
-
-const Main = ({voteResult, setvoteResult}) => {
+const Main = () => {
 
     const [clips, setClips] = useState([]);
     const [displays, setDisplays] = useState([]);
     const [winners, setWinners] = useState([]);
     const [count, setCount] = useState('16강');
+    const usersCollectionRef = collection(database, "result");
+    const navigate = useNavigate();
 
-    console.log(voteResult);
     useEffect(() => {
-        images.sort(() => Math.random() - 0.5);
-        setClips(images);
-        setDisplays([images[0], images[1]]);
+        const randomTest = images.slice(0);
+        randomTest.sort(() => Math.random() - 0.5);
+        setClips(randomTest);
+        setDisplays([randomTest[0], randomTest[1]]);
     }, [])
 
     const clickHandler = (clip) => () => {
@@ -40,19 +43,11 @@ const Main = ({voteResult, setvoteResult}) => {
         }
     }
 
-    const navigate = useNavigate();
 
-    const winnerClick = () => {
-        // 통계 내기 위해 localstorage에 데이터 배열로 저장
-        // result 페이지에서 사용
-        // 필터 배열 길이/전체 배열 길이 해서 % 계산 -> 게이지바에도 활용
-        localStorage.setItem("voteResult", JSON.stringify(displays[0]));
-        setvoteResult([...voteResult, displays[0]]);
+    const winnerClick = async() => {
+        await addDoc(usersCollectionRef, {name: displays[0].name, src: displays[0].src});
         navigate('/result');
-        
     }
-    
-
 
     return (
         <div className='wrap'>
@@ -77,7 +72,6 @@ const Main = ({voteResult, setvoteResult}) => {
                             )
                         })}
                 </FlexBox>
-                {/* <img src={`images/${images[0].src}`} alt='test'/> */}
             </Container>
         </div>
     )

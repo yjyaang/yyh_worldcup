@@ -98,11 +98,11 @@ export const SelectArea = styled.div`
 
     .image {
         width: 400px;
-        @media only screen and (max-width: 420px) {
+        @media only screen and (max-width: 820px) {
             width: 70%;
         }
-        @media only screen and (max-width: 380px) {
-            width: 45%;
+        @media only screen and (max-width: 420px) {
+            width: 50%;
         }
     }
 

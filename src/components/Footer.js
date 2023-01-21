@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <FooterDiv>
             <Title>
-            <i class="fa-brands fa-twitter"></i> @ftodttf_
+            <i className="fa-brands fa-twitter"></i> @ftodttf_
             </Title>
         </FooterDiv>
     )

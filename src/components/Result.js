@@ -29,7 +29,6 @@ const Result = () => {
             <Container>
                 <ResultUl>
                     {images.map(el => {
-                        // 얻은 득표수: 
                         let votes = resultTest.filter(item => el.name === item.name);
                         return (
                             <ResultLi key={el.id}>

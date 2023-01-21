@@ -102,7 +102,7 @@ export const SelectArea = styled.div`
             width: 70%;
         }
         @media only screen and (max-width: 380px) {
-            width: 55%;
+            width: 45%;
         }
     }
 

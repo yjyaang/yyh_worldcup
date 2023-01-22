@@ -1,66 +1,66 @@
 export const images = [
     {
         name: '오늘의 유영혁',
-        src: 'evolution.jpg'
+        src: 'evolution.webp'
     },
     {
         name: '요술공주 윾키',
-        src: 'princess.jpg'
+        src: 'princess.webp'
     },
     {
         name: '가오링스타',
-        src: 'countingstar.jpg'
+        src: 'countingstar.webp'
     },
     {
         name: '유영혁 - 내사람',
-        src: 'mydear.jpg'
+        src: 'mydear.webp'
     },
     {
         name: '김치섞은밥 요리사',
-        src: 'kimchifriedrice.jpg'
+        src: 'kimchifriedrice.webp'
     },
     {
         name: '목 긋는 주장',
-        src: 'youdie.jpg'
+        src: 'youdie.webp'
     },
     {
         name: '어린이 영혁',
-        src: 'children.jpg'
+        src: 'children.webp'
     },
     {
         name: '주먹팡팡',
-        src: 'punch.jpg'
+        src: 'punch.webp'
     },
     {
         name: '오리..아니 거위 영혁',
-        src: 'goose.jpg'
+        src: 'goose.webp'
     },
     {
         name: '하트영혁',
-        src: 'heart.jpg'
+        src: 'heart.webp'
     },
     {
         name: '다 방송 꺼',
-        src: 'turnoff.jpg'
+        src: 'turnoff.webp'
     },
     {
         name: '끄덕끄덕 주장',
-        src: 'nodding.jpg'
+        src: 'nodding.webp'
     },
     {
         name: '유영혁 - 서울의 달',
-        src: 'seoulmoon.jpg'
+        src: 'seoulmoon.webp'
     },
     {
         name: '유영혁 - 잘할걸',
-        src: 'jhg.jpg'
+        src: 'jhg.webp'
     },
     {
         name: '어어 너도 카트하니?',
-        src: 'kartinthecastle.jpg'
+        src: 'kartinthecastle.webp'
     },
     {
         name: '유버스 타고 우~',
-        src: 'ubuswoo.jpg'
+        src: 'ubuswoo.webp'
     },
 ]

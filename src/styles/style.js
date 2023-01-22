@@ -1,4 +1,4 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
@@ -128,11 +128,11 @@ export const ResultLi = styled.li`
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid rgba(160, 160, 160, 0.5);
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
     font-size: 16px;
     @media only screen and (max-width: 420px) {
             width: 85%;
-            font-size: 14px;
+            font-size: 12px;
         }
 `
 

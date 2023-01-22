@@ -166,6 +166,7 @@ export const votechart = keyframes`
 export const ResultUl = styled.ul`
     width: 100%;
     height: calc(100vh - 90px);
+    height: calc((var(--vh, 1vh) * 100) - 90px);
     display: flex;
     flex-direction: column;
     align-items: center;

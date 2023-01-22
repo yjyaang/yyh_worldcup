@@ -15,13 +15,14 @@ const GlobalStyle = createGlobalStyle`
     max-width: 900px;
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0 auto;
-    /* background-color: #bec7f4; */
     }
 
     .wrap {
     width: 100%;
     height: calc(100vh - 90px);
+    height: calc((var(--vh, 1vh) * 100) - 90px);
     display: flex;
     justify-content: center;
     align-items: center;

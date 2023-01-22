@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import GlobalStyle from './styles/GlobalStyle.js';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -7,8 +7,14 @@ import Main from './components/Main';
 import Start from './components/Start';
 import Result from './components/Result';
 import Footer from './components/Footer';
+import { setOneVh } from './styles/setOneVh';
 
 function App() {
+
+  useEffect(() => {
+    setOneVh();
+      window.addEventListener('resize', setOneVh);
+  }, []);
 
   return (
     <div className='app-wrap'>

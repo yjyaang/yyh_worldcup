@@ -20,7 +20,6 @@ const Footer = () => {
     return (
         <FooterDiv>
             <Title>
-            {/* <i className="fa-brands fa-twitter"></i> @ftodttf_ */}
             </Title>
         </FooterDiv>
     )

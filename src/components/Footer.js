@@ -11,7 +11,7 @@ const FooterDiv = styled.div`
 
 const Title = styled.div`
     text-align: center;
-    color: #000;
+    color: #fff;
     font-size: 12px;
     padding: 10px;
 `
@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <FooterDiv>
             <Title>
-            <i className="fa-brands fa-twitter"></i> @ftodttf_
+            {/* <i className="fa-brands fa-twitter"></i> @ftodttf_ */}
             </Title>
         </FooterDiv>
     )

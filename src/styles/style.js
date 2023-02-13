@@ -13,7 +13,7 @@ export const StartContainer = styled(Container)`
         width: 500px;
         margin: 10px;
         @media only screen and (max-width: 820px) {
-            width: 250px;
+            width: 200px;
         }
     }
 `
@@ -102,7 +102,7 @@ export const SelectArea = styled.div`
             width: 70%;
         }
         @media only screen and (max-width: 420px) {
-            width: 50%;
+            width: 45%;
         }
     }
 

@@ -12,7 +12,7 @@ const HeaderDiv = styled.div`
 const Title = styled.div`
     text-align: center;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
 `
 

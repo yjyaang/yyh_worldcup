@@ -11,7 +11,7 @@ const Start = () => {
             <StartContainer>
                 <Title>{titleContent}</Title>
                 <img src='yyh_portrait.jpg' className="yyh_portrait" alt="자화상" />
-                <StartMain>👍 최고의 유영혁에게 투표해 주세요 👍</StartMain>
+                <StartMain>👍 최애 유영혁에게 투표해 주세요 👍</StartMain>
                 <Link to="/main"><BaseBtn>Start</BaseBtn></Link>
             </StartContainer>
         </div>

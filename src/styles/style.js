@@ -13,7 +13,7 @@ export const StartContainer = styled(Container)`
         width: 500px;
         margin: 10px;
         @media only screen and (max-width: 820px) {
-            width: 300px;
+            width: 250px;
         }
     }
 `
@@ -165,8 +165,8 @@ export const votechart = keyframes`
 
 export const ResultUl = styled.ul`
     width: 100%;
-    height: calc(100vh - 90px);
-    height: calc((var(--vh, 1vh) * 100) - 90px);
+    height: calc(100vh -50px);
+    height: calc((var(--vh, 1vh) * 100) - 50px);
     display: flex;
     flex-direction: column;
     align-items: center;

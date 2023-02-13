@@ -6,7 +6,6 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Start from './components/Start';
 import Result from './components/Result';
-import Footer from './components/Footer';
 import { setOneVh } from './styles/setOneVh';
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
           <Route path="/main" element={<Main />} />
           <Route path="/result" element={<Result />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );

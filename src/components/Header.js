@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 const HeaderDiv = styled.div`
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
 `
 
 const Title = styled.div`

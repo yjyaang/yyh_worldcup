@@ -22,8 +22,6 @@ const Result = () => {
 
         getUsers();
     }, [])
-    
-console.log(resultTest);
 
     return (
         <ResultDiv className='wrap'>

@@ -21,8 +21,9 @@ const Result = () => {
         }
 
         getUsers();
-    }, [usersCollectionRef])
-
+    }, [])
+    
+console.log(resultTest);
 
     return (
         <ResultDiv className='wrap'>

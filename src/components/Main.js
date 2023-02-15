@@ -60,7 +60,7 @@ const Main = () => {
                             <div className="winner-content">최고의 유영혁</div>
                             <img src={`images/${displays[0].src}`} alt='test' className='image'/>
                             <div className="winner-content">{displays[0].name}</div>
-                            <BaseBtn onClick={winnerClick}>순위 보기</BaseBtn>
+                            <BaseBtn onClick={winnerClick}>결과 보기</BaseBtn>
                         </SelectArea>
                         :
                         displays.map(item => {
